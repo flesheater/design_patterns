@@ -1,0 +1,16 @@
+{
+    "name": "nikolay.borisov/design_patterns",
+    "description": "Examples of Design Patterns in PHP.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nikolay.borisov",
+            "email": "nikolay.r.borisov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": { "Webham\\DesignPatterns\\": "src" }
+    }
+}
