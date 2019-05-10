@@ -16,9 +16,10 @@ use Webham\DesignPatterns\ObserverExample\ConcreteObserverB;
 /**
  * The client code.
  */
-
+print '<a href="/">back</a>';
 print "
 <pre>
+==========================
 We have the Subject class that is the Observe.
 ConcreteObserverA and ConcreteObserverB are the Observers
 that we attached to our Observe.

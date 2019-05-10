@@ -9,8 +9,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php-ds/php-ds": "dev-master"
+    },
     "autoload": {
         "psr-4": { "Webham\\DesignPatterns\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": {  "Webham\\DesignPatterns\\Tests\\": "tests/" }
+    },
+    "require-dev": {
+        "kint-php/kint": "dev-master",
+        "phpunit/phpunit": "7.5.x-dev"
     }
 }

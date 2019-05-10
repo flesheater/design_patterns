@@ -12,17 +12,26 @@ use Webham\DesignPatterns\StrategyExample\SortingContext;
 use Webham\DesignPatterns\StrategyExample\SortingAlgorithmStrategyA;
 use Webham\DesignPatterns\StrategyExample\SortingAlgorithmStrategyB;
 
+print '<a href="/">back</a>';
+print "
+<pre>
+==========================
+Strategy.
 
-/**
- * The client code picks a concrete strategy and passes it to the context. The
- * client should be aware of the differences between strategies in order to make
- * the right choice.
- */
+We have a SortingContext class to which we are passing different
+SortingAlgorithmStrategy classes (SortingAlgorithmStrategyA and SortingAlgorithmStrategyB that implement AlgorithmStrategyInterface).
+Each of them has a different sorting algorithm.
+
+This way as we need a new sorting implementation we just create a new sorting algorithm and
+pass it to the SortingContext class.
+==========================
+</pre>";
+
+print "<h4>Sorting with SortingAlgorithmStrategyA</h4>";
 $context = new SortingContext(new SortingAlgorithmStrategyA);
 $context->setArray(["b", "a", "c", "d", "e"]);
 $context->doSorting();
 
-print "<br>\n";
-
+print "<h4>Sorting with SortingAlgorithmStrategyB</h4>";
 $context->setStrategy(new SortingAlgorithmStrategyB);
 $context->doSorting();
