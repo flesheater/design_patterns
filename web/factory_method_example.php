@@ -22,8 +22,8 @@ print "
 ==========================
 Factory Method
 
-We are having 3 concrete factories that generate
-Single Domestic cat, Multiple Domestic cat and Single Lion.
+We are having 2 concrete factories that generate
+Single Domestic cat and Single Lion.
 They are generating DomesticCat or Lion object instances.
 
 ==========================
@@ -32,10 +32,6 @@ They are generating DomesticCat or Lion object instances.
 
 print "Single Domestic cat factory:";
 $creator1 = new SingleDomesticCatCreatorFactory;
-print $creator1->visualizeOperation();
-
-print "Multiple domestic cat factory:";
-$creator1 = new MultipleDomesticCatCreatorFactory;
 print $creator1->visualizeOperation();
 
 print "Single Lion factory:";
