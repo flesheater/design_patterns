@@ -1,94 +1,15 @@
 <?php
 
-interface UiAbstractFactoryInterface
-{
-    public function createDialogWindow(): DialogWindowInterface;
+/**
+ * @file
+ * Glue code .
+ */
 
-    public function createCloseButton(): CloseButtonInterface;
-}
+// Autoloading.
+require __DIR__ . '/../vendor/autoload.php';
 
-
-class OsxUiAbstractFactory implements UiAbstractFactoryInterface
-{
-    public function createDialogWindow(): DialogWindowInterface
-    {
-        return new OsxDialogWindow;
-    }
-
-    public function createCloseButton(): CloseButtonInterface
-    {
-        return new OsxCloseButton;
-    }
-}
-
-class WindowsUiAbstractFactory implements UiAbstractFactoryInterface
-{
-    public function createDialogWindow(): DialogWindowInterface
-    {
-        return new WindowsDialogWindow;
-    }
-
-    public function createCloseButton(): CloseButtonInterface
-    {
-        return new WindowsCloseButton;
-    }
-}
-
-
-interface DialogWindowInterface
-{
-    public function render(): string;
-}
-
-class OsxDialogWindow implements DialogWindowInterface
-{
-    public function render(): string
-    {
-        return "OSX window.";
-    }
-}
-
-class WindowsDialogWindow implements DialogWindowInterface
-{
-    public function render(): string
-    {
-        return "Windows window.";
-    }
-}
-
-interface CloseButtonInterface
-{
-
-    public function render(): string;
-
-    public function close(DialogWindowInterface $window): string;
-}
-
-class OsxCloseButton implements CloseButtonInterface
-{
-    public function render(): string
-    {
-        return "Osx close button.";
-    }
-
-    public function close(DialogWindowInterface $window): string
-    {
-        return "Closing ({$window->render()}) ...";
-    }
-}
-
-class WindowsCloseButton implements CloseButtonInterface
-{
-    public function render(): string
-    {
-        return "Windows close button.";
-    }
-
-    public function close(DialogWindowInterface $window): string
-    {
-        return "Closing ({$window->render()}) ...";
-    }
-}
+use Webham\DesignPatterns\AbstractFactory\OsxUiAbstractFactory;
+use Webham\DesignPatterns\AbstractFactory\WindowsUiAbstractFactory;
 
 // Implementing OSX window.
 $osxFactory = new OsxUiAbstractFactory;
