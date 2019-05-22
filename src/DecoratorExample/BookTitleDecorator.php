@@ -12,16 +12,10 @@ abstract class BookTitleDecorator {
         $this->resetTitle();
     }
 
-    /**
-     * Resetting the title to the original.
-     */
     function resetTitle() {
         $this->title = $this->book->getTitle();
     }
 
-    /**
-     * Showing the title.
-     */
     function showTitle() {
         return $this->title;
     }

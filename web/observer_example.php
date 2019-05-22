@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Glue code .
+ * Glue code.
  */
 
 // Autoloading.
@@ -20,9 +20,9 @@ print '<a href="/">back</a>';
 print "
 <pre>
 ==========================
-We have the Subject class that is the Observe.
+We have the Subject class that is the Observe (it could be observed).
 ConcreteObserverA and ConcreteObserverB are the Observers
-that we attached to our Observe.
+that we attach to our Observe.
 All the attached observers are called when we execute our sumeBusinessLogic
 method.
 

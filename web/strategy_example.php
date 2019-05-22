@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Glue code .
+ * Glue code.
  */
 
 // Autoloading.
