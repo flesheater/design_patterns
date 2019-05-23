@@ -12,7 +12,6 @@ use Webham\DesignPatterns\FactoryMethodExample\SingleLionCreatorFactory;
 use Webham\DesignPatterns\FactoryMethodExample\MultipleDomesticCatCreatorFactory;
 use Webham\DesignPatterns\FactoryMethodExample\SingleDomesticCatCreatorFactory;
 
-
 /**
  * The client code.
  */
