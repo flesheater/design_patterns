@@ -10,6 +10,9 @@
       <li><a href="/abstract_factory_example.php">Abstract Factory implementation</a></li>
       <li><a href="/facede_example.php">Facade Pattern implementation</a></li>
       <li><a href="/singelton_example.php">Singleton Pattern implementation</a></li>
+      <li><a href="/command_example.php">Command Pattern implementation</a></li>
+      <li><a href="/proxy_example.php">Proxy Pattern implementation</a></li>
+      <li><a href="/bridge_example.php">Bridge Pattern implementation</a></li>
     </ul>
   </body>
 </html>
