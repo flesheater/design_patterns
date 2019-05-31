@@ -41,18 +41,20 @@ class DecoratorExampleTest extends TestCase {
 
     $this->assertNotEquals($starDecoratedTitleBook->showTitle(), 'Design Patterns');
     $this->assertEquals($starDecoratedTitleBook->showTitle(), 'Design*Patterns');
+
+    return $starDecoratedTitleBook;
   }
 
   /**
    * @group decorator
+   * @depends testStarDecorator
    */
-  public function testResetDecoratedTitle() {
+  public function testResetDecoratedTitle($starDecoratedBook) {
     fwrite(STDOUT, "\n Testing the reset functionality. \n");
-    $starDecoratedTitleBook = new BookTitleStarDecorator($this->book);
-    $starDecoratedTitleBook->starTitle();
-    $starDecoratedTitleBook->resetTitle();
+    $starDecoratedBook->resetTitle();
 
-    $this->assertEquals($starDecoratedTitleBook->showTitle(), 'Design Patterns');
+    $this->assertNotEquals($starDecoratedBook->showTitle(), 'Design*Patterns');
+    $this->assertEquals($starDecoratedBook->showTitle(), 'Design Patterns');
   }
 
 }
