@@ -6,7 +6,7 @@ class Book {
     private $author;
     private $title;
 
-    function __construct($title_in, $author_in) {
+    function __construct($author_in, $title_in) {
         $this->author = $author_in;
         $this->title  = $title_in;
     }
