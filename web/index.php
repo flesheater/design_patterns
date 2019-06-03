@@ -13,6 +13,8 @@
       <li><a href="/command_example.php">Command Pattern implementation</a></li>
       <li><a href="/proxy_example.php">Proxy Pattern implementation</a></li>
       <li><a href="/bridge_example.php">Bridge Pattern implementation</a></li>
+      <li><a href="/template_method_example.php">Template Pattern implementation</a></li>
+      <li><a href="/composite_example.php">Composite Pattern implementation</a></li>
     </ul>
   </body>
 </html>
