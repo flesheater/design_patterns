@@ -15,6 +15,7 @@
       <li><a href="/bridge_example.php">Bridge Pattern implementation</a></li>
       <li><a href="/template_method_example.php">Template Pattern implementation</a></li>
       <li><a href="/composite_example.php">Composite Pattern implementation</a></li>
+      <li><a href="/iterator_example.php">Iterator Pattern implementation</a></li>
     </ul>
   </body>
 </html>
