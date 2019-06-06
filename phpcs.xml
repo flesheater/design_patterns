@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="phpcs-standard">
+  <description>Codestyle ruleset for our project.</description>
+
+  <!-- Specify standards. -->
+  <rule ref="PSR1"/>
+  <rule ref="PSR2"/>
+
+  <!-- Specify folders. -->
+  <file>web</file>
+  <file>src</file>
+  <file>tests</file>
+</ruleset>

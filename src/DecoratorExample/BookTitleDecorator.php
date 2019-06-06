@@ -4,19 +4,23 @@ namespace Webham\DesignPatterns\DecoratorExample;
 
 use Webham\DesignPatterns\DecoratorExample\Book;
 
-abstract class BookTitleDecorator {
+abstract class BookTitleDecorator
+{
     protected $book;
     protected $title;
-    public function __construct(Book $book_in) {
+    public function __construct(Book $book_in)
+    {
         $this->book = $book_in;
         $this->resetTitle();
     }
 
-    function resetTitle() {
+    public function resetTitle()
+    {
         $this->title = $this->book->getTitle();
     }
 
-    function showTitle() {
+    public function showTitle()
+    {
         return $this->title;
     }
 }

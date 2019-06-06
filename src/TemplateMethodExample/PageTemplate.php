@@ -9,7 +9,7 @@ namespace Webham\DesignPatterns\TemplateMethodExample;
  * Concrete subclasses should implement these operations, but leave the template
  * method itself intact.
  */
-abstract class  PageTemplate
+abstract class PageTemplate
 {
     /**
      * The template method defines the skeleton of an algorithm.
@@ -21,7 +21,9 @@ abstract class  PageTemplate
 
         print '<header>' .  $this->renderHeader() . '</header>' .
         '<div class="' . $this->bodyClass() . '">' . $this->renderBody() . '</div>' .
-        '<footer class="' . $this->footerClass() . '">' . $this->renderFooter() . '<div>' . implode(" | ", $footer_links)  . '</div></footer>';
+        '<footer class="' . $this->footerClass() . '">'
+        . $this->renderFooter() .
+        '<div>' . implode(" | ", $footer_links)  . '</div></footer>';
     }
 
     /**
@@ -53,8 +55,8 @@ abstract class  PageTemplate
      * provide additional extension points in some crucial places of the
      * algorithm.
      */
-    protected function hook_preprocess_footerlinks($footer_links) {
-      return $footer_links;
+    protected function hookPreprocessFooterlinks($footer_links)
+    {
+        return $footer_links;
     }
-
 }

@@ -9,7 +9,7 @@ class Lion implements CatInterface
 
     public function display(): string
     {
-      return "<pre>
+        return "<pre>
       @|\@@
      -  @@@@
     /7   @@@@

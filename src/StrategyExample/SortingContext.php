@@ -29,8 +29,9 @@ class SortingContext
     /**
      * Setting the array that we are going to be sorting.
      */
-    public function setArray(array $array) {
-      $this->array = $array;
+    public function setArray(array $array)
+    {
+        $this->array = $array;
     }
 
     /**

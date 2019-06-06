@@ -19,23 +19,24 @@ class TitleFacade
         $this->subsystem2 = $subsystem2 ?: new TitleSuffixer;
     }
 
-    public function setTitle($title) {
-      $this->title = $title;
+    public function setTitle($title)
+    {
+        $this->title = $title;
     }
 
     public function operation(): string
     {
         $this->setTitle(
-          $this->subsystem1->prefixWithText($this->title)
+            $this->subsystem1->prefixWithText($this->title)
         );
         $this->setTitle(
-          $this->subsystem1->prefixWitheNumber($this->title)
+            $this->subsystem1->prefixWitheNumber($this->title)
         );
         $this->setTitle(
-          $this->subsystem2->suffixWithText($this->title)
+            $this->subsystem2->suffixWithText($this->title)
         );
         $this->setTitle(
-          $this->subsystem2->suffixWithNumber($this->title)
+            $this->subsystem2->suffixWithNumber($this->title)
         );
 
         return $this->title;

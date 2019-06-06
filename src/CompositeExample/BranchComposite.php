@@ -54,7 +54,6 @@ class BranchComposite extends TreeComponent
         foreach ($this->children as $child) {
             $results[] = $child->operation();
         }
-
         return "Branch(" . implode("+", $results) . ")";
     }
 }

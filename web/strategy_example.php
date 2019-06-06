@@ -19,8 +19,8 @@ print "
 Strategy.
 
 We have a SortingContext class to which we are passing different
-SortingAlgorithmStrategy classes (SortingAlgorithmStrategyA and SortingAlgorithmStrategyB that implement AlgorithmStrategyInterface).
-Each of them has a different sorting algorithm.
+SortingAlgorithmStrategy classes (SortingAlgorithmStrategyA and SortingAlgorithmStrategyB that implement 
+AlgorithmStrategyInterface). Each of them has a different sorting algorithm.
 
 This way as we need a new sorting implementation we just create a new sorting algorithm and
 pass it to the SortingContext class.

@@ -2,7 +2,8 @@
 
 namespace Webham\DesignPatterns\AdapterExample;
 
-interface OrderedStringMapAdapterInterface {
+interface OrderedStringMapAdapterInterface
+{
     public function addNew(String $item);
     public function getFirst();
     public function getLast();

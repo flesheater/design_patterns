@@ -12,12 +12,16 @@ class TextEditorStreamSingleton
      * The Singleton's constructor should always be private to prevent direct
      * construction calls with the `new` operator.
      */
-    protected function __construct() { }
+    protected function __construct()
+    {
+    }
 
     /**
      * Singletons should not be cloneable.
      */
-    protected function __clone() { }
+    protected function __clone()
+    {
+    }
 
     /**
      * Singletons should not be restorable from strings.
@@ -46,7 +50,8 @@ class TextEditorStreamSingleton
         $this->text .= $text;
     }
 
-    public function showText() {
-      return $this->text;
+    public function showText()
+    {
+        return $this->text;
     }
 }

@@ -12,8 +12,9 @@ class SortingAlgorithmStrategyA implements AlgorithmStrategyInterface
     /**
      * {@inheritdoc}
      */
-    public function getName() {
-      return "StrategyA";
+    public function getName()
+    {
+        return "StrategyA";
     }
 
     /**
@@ -21,7 +22,7 @@ class SortingAlgorithmStrategyA implements AlgorithmStrategyInterface
      */
     public function doAlgorithm(array $data): array
     {
-      sort($data);
-      return $data;
+        sort($data);
+        return $data;
     }
 }

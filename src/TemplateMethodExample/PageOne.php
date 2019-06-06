@@ -16,8 +16,9 @@ class PageOne extends PageTemplate
         return "Body content.";
     }
 
-    protected function hook_preprocess_footerlinks($footer_links) {
-      $footer_links[] = '<a href="/google">Go to google link</a>';
-      return $footer_links;
+    protected function hookPreprocessFooterlinks($footer_links)
+    {
+        $footer_links[] = '<a href="/google">Go to google link</a>';
+        return $footer_links;
     }
 }

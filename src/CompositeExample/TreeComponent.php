@@ -37,9 +37,13 @@ abstract class TreeComponent
      * object tree assembly. The downside is that these methods will be empty
      * for the leaf-level components.
      */
-    public function add(TreeComponent $component): void { }
+    public function add(TreeComponent $component): void
+    {
+    }
 
-    public function remove(TreeComponent $component): void { }
+    public function remove(TreeComponent $component): void
+    {
+    }
 
     /**
      * You can provide a method that lets the client code figure out whether a

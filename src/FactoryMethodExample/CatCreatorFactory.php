@@ -11,7 +11,7 @@ abstract class CatCreatorFactory
 
     public function visualizeOperation(): string
     {
-       $cat = $this->factoryMethod();
-       return $cat->display();
+        $cat = $this->factoryMethod();
+        return $cat->display();
     }
 }

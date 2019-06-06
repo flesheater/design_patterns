@@ -34,7 +34,7 @@ $media_list[] = new ListMediaViewBridge($implementationList2);
 
 print "List:<br>";
 foreach ($media_list as $media_list_item) {
-  print $media_list_item->render();
+    print $media_list_item->render();
 }
 
 //// Render as extended list.
@@ -44,5 +44,5 @@ $media_list_extended[] = new ExtendedMediaViewBridge($implementationList2);
 
 print "Detail:<br>";
 foreach ($media_list_extended as $media_list_item) {
-  print $media_list_item->render();
+    print $media_list_item->render();
 }

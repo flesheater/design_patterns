@@ -18,8 +18,9 @@ class BatchInvoker
     {
         $this->processItemCommand = $command;
     }
-    public function addCommandItem($item) {
-      $this->items[] = $item;
+    public function addCommandItem($item)
+    {
+        $this->items[] = $item;
     }
 
     public function runBach(): void

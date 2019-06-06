@@ -18,5 +18,7 @@ abstract class MediaViewBridge
         $this->implementation = $implementation;
     }
 
-    public function render() {}
+    public function render()
+    {
+    }
 }

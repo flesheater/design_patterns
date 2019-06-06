@@ -12,7 +12,6 @@ use Webham\DesignPatterns\AdapterExample\OrderedStringStorage;
 use Webham\DesignPatterns\AdapterExample\ArrayAdapter;
 use Webham\DesignPatterns\AdapterExample\SetAdapter;
 
-
 /**
  * The client code.
  */

@@ -12,7 +12,6 @@ use Webham\DesignPatterns\ObserverExample\Subject;
 use Webham\DesignPatterns\ObserverExample\ConcreteObserverA;
 use Webham\DesignPatterns\ObserverExample\ConcreteObserverB;
 
-
 /**
  * The client code.
  */

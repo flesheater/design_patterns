@@ -12,7 +12,6 @@ use Webham\DesignPatterns\DecoratorExample\Book;
 use Webham\DesignPatterns\DecoratorExample\BookTitleExclaimDecorator;
 use Webham\DesignPatterns\DecoratorExample\BookTitleStarDecorator;
 
-
 /**
  * The client code.
  */

@@ -15,9 +15,13 @@ abstract class MediaImplementation
     protected $media;
     public function __construct($title, $media)
     {
-      $this->title = $title;
-      $this->media = $media;
+        $this->title = $title;
+        $this->media = $media;
     }
-    public function renderMedia() {}
-    public function renderTitle() {}
+    public function renderMedia()
+    {
+    }
+    public function renderTitle()
+    {
+    }
 }

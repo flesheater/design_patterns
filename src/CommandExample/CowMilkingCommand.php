@@ -18,12 +18,12 @@ class CowMilkingCommand implements BatchCommandInterface
 
     public function execute()
     {
-      print $this->activity;
-      if (!$this->cowReceiver->isMilked()) {
-        print "<i>Milking ...</i><br>";
-        $this->cowReceiver->milkCow();
-        return;
-      }
-      print "<i>Cow already milked ...</i><br>";
+        print $this->activity;
+        if (!$this->cowReceiver->isMilked()) {
+            print "<i>Milking ...</i><br>";
+            $this->cowReceiver->milkCow();
+            return;
+        }
+        print "<i>Cow already milked ...</i><br>";
     }
 }

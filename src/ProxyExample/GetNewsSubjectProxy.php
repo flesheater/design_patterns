@@ -29,12 +29,11 @@ class GetNewsSubjectProxy implements GetNewsSubjectInterface
     {
         print "Proxy: Checking access prior to firing a real request. <br>";
         if ($this->userAccess) {
-          print "Proxy: Access allowed. <br>";
-          return true;
+            print "Proxy: Access allowed. <br>";
+            return true;
         }
         print "Proxy: Access denied. <br>";
         return false;
-
     }
 
     private function logAccess(): void
