@@ -11,6 +11,18 @@ require __DIR__ . '/../vendor/autoload.php';
 use Webham\DesignPatterns\AbstractFactory\OsxUiAbstractFactory;
 use Webham\DesignPatterns\AbstractFactory\WindowsUiAbstractFactory;
 
+/**
+ * The client code.
+ */
+print '<a href="/">back</a>';
+print "
+<pre>
+==========================
+Abstract Factory Example
+
+==========================
+</pre>";
+
 // Implementing OSX window.
 $osxFactory = new OsxUiAbstractFactory;
 $osxWindow = $osxFactory->createDialogWindow();

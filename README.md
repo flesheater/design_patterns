@@ -11,7 +11,7 @@ in the root folder and then run:
 docker-compose up -d
 ```
 
-This way you would have the example running if you have php installed and you could test it by navigating to:
+This way you would have the example running if you have docker and docker-compose installed and you could test it by navigating to:
 ```
 http://dpatterns.localhost:8000
 ```

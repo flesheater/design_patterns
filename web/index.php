@@ -1,7 +1,8 @@
 <html>
-  <head></head>
+  <head><title>Design Patterns in PHP.</title></head>
   <body>
-    <ul>
+    <h2>Design Patterns in PHP.</h2>
+    <ol>
       <li><a href="/strategy_example.php">Strategy Pattern implementation</a></li>
       <li><a href="/observer_example.php">Observer Pattern implementation</a></li>
       <li><a href="/decorator_example.php">Decorator Pattern implementation</a></li>
@@ -18,6 +19,6 @@
       <li><a href="/iterator_example.php">Iterator Pattern implementation</a></li>
       <li><a href="/state_example.php">State Pattern implementation</a></li>
       <li><a href="/null_object_example.php">Null Object Pattern implementation</a></li>
-    </ul>
+    </ol>
   </body>
 </html>

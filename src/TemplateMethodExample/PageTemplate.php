@@ -17,7 +17,7 @@ abstract class PageTemplate
     final public function templateMethod(): void
     {
         $footer_links = ['<a href="/impresum">Imprsum</a>', '<a href="/about">About</a>'];
-        $footer_links = $this->hook_preprocess_footerlinks($footer_links);
+        $footer_links = $this->hookPreprocessFooterlinks($footer_links);
 
         print '<header>' .  $this->renderHeader() . '</header>' .
         '<div class="' . $this->bodyClass() . '">' . $this->renderBody() . '</div>' .
