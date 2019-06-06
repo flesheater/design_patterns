@@ -17,6 +17,7 @@
       <li><a href="/composite_example.php">Composite Pattern implementation</a></li>
       <li><a href="/iterator_example.php">Iterator Pattern implementation</a></li>
       <li><a href="/state_example.php">State Pattern implementation</a></li>
+      <li><a href="/null_object_example.php">Null Object Pattern implementation</a></li>
     </ul>
   </body>
 </html>
