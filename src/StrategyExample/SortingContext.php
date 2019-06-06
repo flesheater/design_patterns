@@ -46,10 +46,17 @@ class SortingContext
      * The Context delegates some work to the Strategy object instead of
      * implementing multiple versions of the algorithm on its own.
      */
-    public function doSorting(): void
+    public function doSorting(): string
+    {
+        $result = $this->algorighmStrategy->doAlgorithm($this->array);
+        return implode(",", $result);
+    }
+
+    /**
+     * Pronouncing the sorting.
+     */
+    public function pronounceSorting(): void
     {
         print "Context: Doing sorting with <strong>" . $this->algorighmStrategy->getName() . '</strong><br>';
-        $result = $this->algorighmStrategy->doAlgorithm($this->array);
-        print implode(",", $result) . "\n";
     }
 }

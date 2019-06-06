@@ -30,8 +30,10 @@ pass it to the SortingContext class.
 print "<h4>Sorting with SortingAlgorithmStrategyA</h4>";
 $context = new SortingContext(new SortingAlgorithmStrategyA);
 $context->setArray(["b", "a", "c", "d", "e"]);
-$context->doSorting();
+print $context->pronounceSorting();
+print $context->doSorting();
 
 print "<h4>Sorting with SortingAlgorithmStrategyB</h4>";
 $context->setStrategy(new SortingAlgorithmStrategyB);
-$context->doSorting();
+print $context->pronounceSorting();
+print $context->doSorting();
