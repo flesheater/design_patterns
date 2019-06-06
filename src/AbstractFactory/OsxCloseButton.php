@@ -8,7 +8,7 @@ class OsxCloseButton implements CloseButtonInterface
 {
     public function render(): string
     {
-        return "Osx close button.";
+        return "OSX close button.";
     }
 
     public function close(DialogWindowInterface $window): string
