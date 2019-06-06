@@ -8,11 +8,23 @@ composer install
 ```
 in the root folder and then run:
 ```
-php -S localhost:8000 -t web/
+docker-compose up -d
 ```
 
 This way you would have the example running if you have php installed and you could test it by navigating to:
 ```
-http://localhost:8000/
+http://dpatterns.localhost:8000
 ```
 in your browser.
+
+*If you are not using Chorme you would have to add
+```
+127.0.0.1       dpatterns.localhost
+```
+to your /etc/hosts file.
+
+## The Unit tests
+you could run the PHPUnit tests like so:
+```
+docker exec -it design_patterns_php ./vendor/bin/phpunit
+```
