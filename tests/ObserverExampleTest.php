@@ -30,9 +30,12 @@ class ObserverExampleTest extends TestCase
         $o1 = new ConcreteObserverA();
         $this->subject->attach($this->o1);
         $this->subject->someBusinessLogic();
-        $this->expectOutputString('Subject: Attached an observer.\n
-        + <br>Subject: My state has just changed.<br>Subject: Notifying observers...\n
-        + <br><i>ConcreteObserverA: Reacted to the event.</i><br>x');
+        
+        $this->assertContains(
+            'ConcreteObserverA: Reacted to the event.',
+            $this->getActualOutput()
+            
+        );
     }
 
     /**
@@ -43,9 +46,13 @@ class ObserverExampleTest extends TestCase
         $this->subject->attach($this->o1);
         $this->subject->attach($this->o2);
         $this->subject->someBusinessLogic();
-        $this->expectOutputString('Subject: Attached an observer.\n
-        + <br>Subject: Attached an observer.\n
-        + <br>Subject: My state has just changed.<br>Subject: Notifying observers...\n
-        + <br><i>ConcreteObserverA: Reacted to the event.</i><br><i>ConcreteObserverB: Reacted to the event.</i><br>');
+        $this->assertContains(
+            'ConcreteObserverA: Reacted to the event.',
+            $this->getActualOutput()
+        );
+        $this->assertContains(
+            'ConcreteObserverB: Reacted to the event.',
+            $this->getActualOutput()
+        );
     }
 }
