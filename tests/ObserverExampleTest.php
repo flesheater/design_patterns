@@ -34,7 +34,6 @@ class ObserverExampleTest extends TestCase
         $this->assertContains(
             'ConcreteObserverA: Reacted to the event.',
             $this->getActualOutput()
-            
         );
     }
 
