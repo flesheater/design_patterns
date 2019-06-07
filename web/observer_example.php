@@ -31,14 +31,12 @@ method.
 $subject = new Subject();
 
 $o1 = new ConcreteObserverA();
-$subject->attach($o1);
-
 $o2 = new ConcreteObserverB();
+print '<h3>Testing with 2 observers</h3>';
+$subject->attach($o1);
 $subject->attach($o2);
-
-$subject->someBusinessLogic();
 $subject->someBusinessLogic();
 
+print '<h3>Testing with one observer</h3>';
 $subject->detach($o2);
-
-$subject->someBusinessLogic();
+print_r($subject->someBusinessLogic());

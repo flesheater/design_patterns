@@ -61,7 +61,7 @@ class Subject implements SubjectInterface
     public function someBusinessLogic(): void
     {
         $this->state = rand(0, 10);
-        echo "Subject: My state has just changed to: " . $this->state ."\n <br>";
+        echo "Subject: My state has just changed.<br>";
         $this->notify();
     }
 }

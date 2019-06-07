@@ -14,8 +14,6 @@ class ConcreteObserverB implements ObserverInterface
      */
     public function update(SubjectInterface $subject): void
     {
-        if ($subject->state == 0 || $subject->state >= 2) {
-            echo "<i>ConcreteObserverB: Reacted to the event.\n</i><br>";
-        }
+            print "<i>ConcreteObserverB: Reacted to the event.</i><br>";
     }
 }
