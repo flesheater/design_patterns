@@ -38,4 +38,4 @@ $branch2->add(new Leaf);
 $tree->add($branch1);
 $tree->add($branch2);
 print "<br>Client: Now I've got a BranchComposite tree:<br>";
-print "operation on: " . $simple->operation();
+print "operation on: " . $tree->operation();
